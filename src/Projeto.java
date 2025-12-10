@@ -30,13 +30,13 @@ public class Projeto {
     this.localizacao = localizacao;
     }
 
-    ///// Getters and Setters ///////
+///// Getters and Setters ///////
 
-// Codigo de registro
+                    // Codigo de registro
     public int getCodigoRegistro() {
         return codigoRegistro;
     }
-// Nome do cliente
+                    // Nome do cliente
     public String getNomeCliente () {
         return nomeCliente;
     }
@@ -47,7 +47,7 @@ public class Projeto {
     } else {
         throw new IllegalArgumentException("Digite um nome válido.");
     }
-// Valor do Projeto
+                    // Valor do Projeto
     }
     public double getValorProjeto() {
         return valorProjeto;
@@ -59,5 +59,13 @@ public class Projeto {
             throw new IllegalArgumentException("Digite um valor válido para o projeto.");
         }
     }
+                    // Linha do projeto
+    public String getLinhaProjeto() {
+        return linhaProjeto;
+    }
+    public void setLinhaProjeto(String linhaProjeto) {
+            this.linhaProjeto = linhaProjeto;
+    }
+
 }
 
