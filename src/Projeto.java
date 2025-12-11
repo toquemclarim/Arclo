@@ -66,6 +66,17 @@ public class Projeto {
     public void setLinhaProjeto(String linhaProjeto) {
             this.linhaProjeto = linhaProjeto;
     }
+                    // Status do projeto
+    public String getStatusProjeto() {
+        return statusProjeto;
+    }
+
+    public void setStatusProjeto(String statusProjeto) {
+        if (statusProjeto.equals("Em andamento") || statusProjeto.equals("Concluído") || statusProjeto.equals("Pausado")) {
+            this.statusProjeto = statusProjeto;
+}       else {
+            throw new IllegalArgumentException("Status inválido! Use 'Em andamento', 'Concluído' ou 'Pausado'.");
+        }
+    }
 
 }
-
